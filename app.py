@@ -47,7 +47,7 @@ def getprice(currency, crypto):
             return '1 {} = {} {}'.format(data[0]['name'], str(price), currency.upper())
         else:
             return not_supperted_text
-    except Exception e:
+    except Exception as e:
         return 'Unexpected error: ' + e
 
 
